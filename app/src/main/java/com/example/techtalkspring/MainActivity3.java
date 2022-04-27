@@ -3,6 +3,7 @@ package com.example.techtalkspring;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
 
-    private Switch sUpdateRole;
+    private SwitchCompat sUpdateRole;
     private boolean teacher = true;
 
     @Override
@@ -39,7 +40,7 @@ public class MainActivity3 extends AppCompatActivity {
         textViewName.setText(messageName);
 
         //update within activity3
-        sUpdateRole = findViewById(R.id.swchTS);
+        sUpdateRole = findViewById(R.id.switchRole);
         sUpdateRole.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -65,7 +66,7 @@ public class MainActivity3 extends AppCompatActivity {
         if(teacher){
             textViewRole.setText("Is a teacher.");
         }else{
-            textViewRole.setText("Is a student");
+            textViewRole.setText("Is a student.");
         }
 
 

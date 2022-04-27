@@ -1,6 +1,7 @@
 package com.example.techtalkspring;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     public static final String EXTRA_NAME = "PERSON_NAME";
     public static final String EXTRA_ROLE = "ROLE";
     private boolean teacher = true;
-    private Switch sSwitch;
+    private SwitchCompat sSwitch;
 
 
 
